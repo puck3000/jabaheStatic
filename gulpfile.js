@@ -7,7 +7,9 @@ var autoprefixer = require('autoprefixer-stylus');
 var minifyCSS = require('gulp-minify-css');
 var concatCss = require('gulp-concat-css');
 var twig = require('gulp-twig');
-var deploy = require('gulp-gh-pages');
+// var deploy = require('gulp-gh-pages');
+var ghpages = require('gh-pages');
+var path = require('path');
 
 
 
@@ -48,10 +50,15 @@ gulp.task('compile-twig', function() {
       .pipe(gulp.dest('dist/'));
 });
 
-// deploy to gh-pages task
-gulp.task('deploy', function () {
-    return gulp.src('dist/**/*')
-        .pipe(deploy());
+// // deploy to gh-pages task
+// gulp.task('deploy', function () {
+//     return gulp.src('dist/**/*')
+//         .pipe(deploy());
+// });
+
+// deploy the dist folder to gh-pages
+gulp.task("deploy", function(cb) {
+  ghpages.publish(path.join(process.cwd(), "dist"), cb);
 });
 
 
