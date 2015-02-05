@@ -9,5 +9,7 @@ gulp.task('scripts', function(callback) {
     'grabJquery',
   ],
   'vendorscripts',
+  'plugScripts',
+  'mainScripts',
   callback);
 });
