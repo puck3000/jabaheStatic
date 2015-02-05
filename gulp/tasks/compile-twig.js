@@ -5,9 +5,9 @@ var reload      = browserSync.reload;
 
 // Compile Twig
 gulp.task('compile-twig', function() {
-    return gulp.src('dev/twig/*.html')
-      .pipe(twig())
-      .pipe(gulp.dest('dist/'))
-     .pipe(reload({stream:true}));
+    return gulp.src('dev/twig/**/*.html')
+      	.pipe(twig())
+     	.pipe(gulp.dest('dist/'))
+    	.pipe(reload({stream:true}));
        
 });
