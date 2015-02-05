@@ -1,7 +1,7 @@
 var gulp = require('gulp');
 var twig = require('gulp-twig');
 var browserSync = require('browser-sync');
-var reload = browserSync.reload;
+var reload      = browserSync.reload;
 
 // Compile Twig
 gulp.task('compile-twig', function() {

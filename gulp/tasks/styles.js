@@ -7,7 +7,7 @@ var autoprefixer = require('autoprefixer-stylus');
 
 // styles task
 gulp.task('styles',['minifyCSS'], function() {
-    return gulp.src('dev/styles/**/*.styl')
+    return gulp.src('dev/styles/main.styl')
       .pipe(stylus({
         'include css': true,
       	compress:true,
