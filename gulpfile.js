@@ -25,7 +25,7 @@ gulp.task('browser-sync', function() {
 // concat & minify imported css
 gulp.task('minifyCSS', function() {
     gulp.src('dev/styles/cssImports/*')
-    .pipe(concatCss("modules/cssImports.css"))
+    .pipe(concatCss("allCssImports.css"))
     .pipe(minifyCSS())
     .pipe(gulp.dest('dev/styles/'))
 });
@@ -38,8 +38,9 @@ gulp.task('styles',['minifyCSS'], function() {
       	compress:true,
         use: [autoprefixer(), jeet()]
       }))
-	.pipe(gulp.dest('dist/assets/styles/'))
-	.pipe(reload({stream:true}));	
+	   .pipe(gulp.dest('dist/assets/styles/'))
+     .pipe(reload({stream:true}));
+
 });
 
 
@@ -47,7 +48,9 @@ gulp.task('styles',['minifyCSS'], function() {
 gulp.task('compile-twig', function() {
     return gulp.src('dev/twig/*.html')
       .pipe(twig())
-      .pipe(gulp.dest('dist/'));
+      .pipe(gulp.dest('dist/'))
+     .pipe(reload({stream:true}));
+       
 });
 
 // // deploy to gh-pages task
