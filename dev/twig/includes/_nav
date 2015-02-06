@@ -1,0 +1,9 @@
+<nav>
+	<ul>
+		<li><a href="/">Home</a></li>
+		<li><a href="/aktuelles.html">Aktuelles</a></li>
+		<li><a href="/about.html">Über uns</a></li>
+		<li><a href="/institutionen.html">Institutionen</a></li>
+		<li><a href="kontakt">Kontakt</a></li>
+	</ul>
+</nav>
