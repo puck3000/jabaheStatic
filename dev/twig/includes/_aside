@@ -1,7 +1,9 @@
 <aside>
+	<button>DE</button>
+	<button>FR</button>
 	<ul>
-		<li>Qualitätssicherung</li>
-		<li>Freie Stellen</li>
-		<li>Frei Plätze</li>
+		<li><a href="/">Qualitätssicherung</a></li>
+		<li><a href="/">Freie Stellen</a></li>
+		<li><a href="/">Freie Plätze</a></li>
 	</ul>
 </aside>
