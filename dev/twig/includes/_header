@@ -1,4 +1,6 @@
 <header>
-	<img src="http://placehold.it/300x150/ff00ff/ffffff0&text=LOGO" alt="Logo">
+	{% include '_logo' %}
 	{% include '_nav' %}
+{# 	{% include '_aside' %}
+ #}	
 </header>
