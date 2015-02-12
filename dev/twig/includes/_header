@@ -1,6 +1,8 @@
 <header>
 	<div id="head">
-		<img src="http://placehold.it/300x150/ff00ff/ffffff0&text=LOGO" alt="Logo" id="logo">
+		<div id="logo">
+			<img src="http://placehold.it/300x150/ff00ff/ffffff0&text=LOGO" alt="Logo">
+		</div>
 		<div id="buttCont">
 		<button id="navToggle" type="button" class="tcon tcon-menu--xbutterfly" aria-label="toggle menu">
 		  <span class="tcon-menu__lines" aria-hidden="true"></span>
@@ -10,11 +12,11 @@
 	</div>
 	<nav>
 		<ul>
-			<li><a href="/">test</a></li>
-			<li><a href="/">test</a></li>
-			<li><a href="/">test</a></li>
-			<li><a href="/">test</a></li>
-			<li><a href="/">test</a></li>
+			<li><a href="/">home</a></li>
+			<li><a href="aktuelles.html">Aktuelles</a></li>
+			<li><a href="about.html">Über uns</a></li>
+			<li><a href="institutionen.html">Institutionen</a></li>
+			<li><a href="kontakt.html">Kontakt</a></li>
 		</ul>
 	</nav>
 </header>
