@@ -3,21 +3,25 @@
 header 
 	position: fixed
 	max-width: 1200px
+	background-color: white
 	top: 0
 	left: 2em
 	right: 0
 	#logo	
 		z-index: 10
 		col (5/7)
-	button
+	.button 
 		col(1/7)
+	.buttContainer
+		margin-top: 2.5em
 	@media (min-width: 35em)
 		button
 			display: none !important
+				
 nav
 	position: relative
 	z-index: -5
-	transition: all 200ms linear
+	transition: transform 200ms linear
 	col(6/7)
 	li 
 		col(1/5 6/7)
@@ -25,9 +29,11 @@ nav
 	@media (max-width: 35em)
 		col(7/7)
 		transform: translateY(-100%) 
+		margin-top: -100%
 		background: white
 		color: black
 		&.open
+			margin-top: 0%
 			transform: translateY(0%)
 			z-index: 10
 		li 

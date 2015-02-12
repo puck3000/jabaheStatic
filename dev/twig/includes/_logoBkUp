@@ -2,14 +2,12 @@
 	<img src="http://placehold.it/300x150/ff00ff/ffffff0&text=LOGO" alt="Logo">
 </div>
 {# transformicons #}
-<div class="button">
-	<div class="buttContainer">
-	<button id="navToggle" type="button" class="tcon tcon-menu--xbutterfly" aria-label="toggle menu">
+
+<button id="navToggle" type="button" class="tcon tcon-menu--xbutterfly" aria-label="toggle menu">
 <div class="contain">
   <span class="tcon-menu__lines" aria-hidden="true"></span>
   <span class="tcon-visuallyhidden">toggle menu</span>
 </div>
 </button>
-	</div>
-</div>
+
 
