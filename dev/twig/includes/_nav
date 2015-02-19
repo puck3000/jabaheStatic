@@ -1,4 +1,4 @@
-<nav>
+<nav class="{{bgClass}}">
 	<ul>
 		<li><a href="index.html">Home</a></li>
 		<li><a href="aktuelles.html">Aktuelles</a></li>

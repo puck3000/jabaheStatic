@@ -1,9 +1,10 @@
 <aside>
-	<button>DE</button>
-	<button>FR</button>
 	<ul>
-		<li><a href="/">Qualitätssicherung</a></li>
-		<li><a href="/">Freie Stellen</a></li>
-		<li><a href="/">Freie Plätze</a></li>
+		<li id="stellen">
+			{% include '_stellen'  %}
+		</li>
+		<li id="plätze" >
+			{% include '_plätze'  %}
+		</li>
 	</ul>
 </aside>

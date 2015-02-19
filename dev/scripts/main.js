@@ -12,3 +12,17 @@ $(function() {
     });
 
 });
+
+// modal toggle
+	$(function() {  
+	    $('.stellenToggle').click(function  () {
+	    	$('#stellen').fadeOut()
+	    });
+
+	});
+	$(function() {  
+	    $('.plätzeToggle').click(function  () {
+	    	$('#plätze').fadeOut()
+	    });
+
+	});

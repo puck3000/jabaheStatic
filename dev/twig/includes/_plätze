@@ -1,0 +1,9 @@
+<article class="modal plätze">
+	<i class="fa fa-times modalToggle plätzeToggle"></i>
+	<div class="modalContent">
+		<div class="inner">
+			<h1>freie <br>Plätze</h1>
+			<a href="index.html">mehr Infos</a>
+		</div>
+	</div>
+</article>

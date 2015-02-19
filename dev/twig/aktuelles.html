@@ -4,11 +4,12 @@
  #}
 
 {% extends "layouts/_layout.html" %}
+{% set title = 'aktuelles' %}
+{% set bgClass = 'aktuelles' %}
 
 {% block content %}
 {% include 'includes/_header' %}
 <main>
-<h1>Aktuelles</h1>
 {% include 'includes/_mainText'  %}
 {% include 'includes/_footer' %}
 </main>

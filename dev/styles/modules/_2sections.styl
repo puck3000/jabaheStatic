@@ -1,20 +1,16 @@
 section
-	cf()
-	&#text
-		p 
-			col(6/7)
-	&#picText
-		img 
-			col(3/7)
-		p 
-			col(2/7)
-	@media (max-width: 35em)
-		col(7/7)
-		&#text
-			p 
-				col(7/7)
+	center(1200px)
+	col(7/7)
+	@media (min-width: 35em)
 		&#picText
-			img 
-				col(7/7)
+			img
+				col(1/2 7/7)
 			p 
-				col(7/7)
+				col(1/2 7/7)	
+		&#text
+			col(10/14, offset: 2/14)
+			text-align: center
+		&#picText
+			p 
+				text-align: center
+			

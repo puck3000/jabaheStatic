@@ -3,13 +3,16 @@
  # ---------------
  #}
 
+
 {% extends "layouts/_layout.html" %}
+{% set title = 'home' %}
+{% set bgClass = 'home' %}
+
 
 {% block content %}
 {% include 'includes/_header' %}
 <main>
-<h1>home</h1>
-{% include 'includes/_mainPic'  %}
+{% include 'includes/_home'  %}
 {% include 'includes/_footer' %}
 </main>
 {% endblock %}

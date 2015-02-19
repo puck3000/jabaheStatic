@@ -4,11 +4,12 @@
  #}
 
 {% extends "layouts/_layout.html" %}
+{% set title = 'about' %}
+{% set bgClass = 'about' %}
 
 {% block content %}
 {% include 'includes/_header' %}
 <main>
-<h1>Über uns</h1>
 {% include 'includes/_mainPicText'  %}
 {% include 'includes/_footer' %}
 </main>

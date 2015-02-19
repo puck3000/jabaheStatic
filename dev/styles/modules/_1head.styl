@@ -1,15 +1,20 @@
 header
 	position: fixed
-	background-color: blue
 	width: 100%
+	z-index: 400
 	#head 
 		position: relative
 		center(1200px)
-		background-color: green
+		z-index: 500
 		#logo
-			span(6/7)
+			col(4/14, offset: 5/14)
+			text-align: center
+			padding-top: 1rem
+			padding-bottom: 1rem
+			@media (max-width: 35em)
+				col(5/7)
 		#buttCont
-			col(1/7)
+			col(1/7, offset: 1/7)
 			@media (min-width: 35em)
 				display: none
 		button
@@ -17,18 +22,25 @@ header
 			
 	nav 
 		center(1200px)
-		
+		text-align: center
+		position: relative
+		padding-bottom: 1rem
+		ul
+			span(5/7, offset: 1/7)
+			@media(max-width: 35em)
+				span(7/7)
 		ul li 
 			transition: all 200ms linear
-			col(1/7)
+			padding: 1rem 0
+			col(1/5 5/7, cycle:5)
 			@media (max-width: 35em)
-				margin-top: -10%
-				stack()
+				margin-top: -20%
+				col(1/1, uncycle)
 		@media (max-width: 35em)
 			&.open
 				ul li
 					margin-top: 0%
-				
+			
 // HEADROOM JS
 
 .headroom 

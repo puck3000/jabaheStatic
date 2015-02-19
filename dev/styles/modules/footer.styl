@@ -1,3 +1,15 @@
 footer 
 	cf()
+	padding-top: 1rem
 	col(7/7)
+	.copyright
+		col(2/7)
+		@media(max-width: 35em)
+			stack()
+	.qualität
+		col(2/7, offset: 3/7)
+		text-align: right
+		
+		@media(max-width: 35em)
+			unshift()
+			stack()

@@ -1,28 +1,113 @@
-edit()
 
+/*
+ **********************
+* variabeln
+ **********************
+*/
 
+// hintergrundfarben
+
+blau = #e0fffe
+grun = #ddffba
+gelb =#feffbf
+rot = #f3c4c4
+
+// buffer, weil variabeln sonst alles vermantschen
+.nothing
+	color: blue
+	
+/*
+ **********************
+* hintergrundfarben & aktive nav
+ **********************
+*/
+ 
+.home
+	background-color: blau
+	header #head, header nav, main
+		background-color: blau
+	nav ul li:first-child a
+		border-bottom: 2px solid black
+.aktuelles
+	background-color: grun
+	header #head, header nav, main
+		background-color: grun
+	nav ul li:nth-child(2) a
+		border-bottom: 2px solid black
+	
+.about
+	background-color: gelb
+	header #head, header nav, main
+		background-color: gelb
+	nav ul li:nth-child(3) a
+		border-bottom: 2px solid black
+		
+.institutionen
+	background-color: rot
+	header #head, header nav, main
+		background-color: rot
+	nav ul li:nth-child(4) a
+		border-bottom: 2px solid black
+		
+.kontakt
+	background-color: blau
+	header #head, header nav, main
+		background-color: blau
+	nav ul li:nth-child(5) a
+		border-bottom: 2px solid black
+		
+
+		
+/*
+ **********************
+* allgemeines
+ **********************
+*/
 
 img 
 	max-width: 100%
 	
 main
 	center(1200px)
-	min-height: 300vh
-	background-color: red
-	padding-top: 10em
-
-	
+	padding: 14rem 0 0
+	cf()
 ul 
 	padding: 0
 	margin: 0
 	li 
 		list-style: none
 	
-a 
-	text-decoration: none
-	color: black
-	&:hover
-		text-decoration: underline
 h1, aside, nav
 	cf()
+
+p 
+	margin-top: 0
 	
+
+		
+/*
+ **********************
+* fonts
+ **********************
+*/
+
+
+// fonts
+h1, h2, h3, h4, h5, h6
+	font-family: "HelveticaNeue-Medium", "Helvetica Neue"
+	color: #231f20
+p, a 
+	font-family: "HelveticaNeue-Regular", "Helvetica Neue"
+	color: #231f20
+nav 
+	font-weight: bold
+	
+a 
+	text-decoration: none
+	transition: all 200ms linear
+	&:hover, &:active
+		color: black
+		border-bottom: 2px solid black
+
+article>p, .lauftext
+	font-size: 2rem
