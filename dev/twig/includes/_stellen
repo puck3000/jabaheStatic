@@ -1,9 +1,0 @@
-<article class="modal stellen" >
-	<i class="fa fa-times modalToggle stellenToggle"></i>
-	<div class="modalContent">
-		<div class="inner">
-			<h1>offene <br>Stellen</h1>
-			<a href="index.html">mehr Infos</a>
-		</div>
-	</div>
-</article>

@@ -1,9 +1,0 @@
-<nav class="{{bgClass}}">
-	<ul>
-		<li><a href="index.html">Home</a></li>
-		<li><a href="aktuelles.html">Aktuelles</a></li>
-		<li><a href="about.html">Über uns</a></li>
-		<li><a href="institutionen.html">Institutionen</a></li>
-		<li><a href="kontakt.html">Kontakt</a></li>
-	</ul>
-</nav>

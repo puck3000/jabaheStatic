@@ -1,6 +1,0 @@
-<section id="bigPic">
-	<article class="home">
-		<img src="assets/img/TestImageTrans_Jabahe-1200px.png" alt="TheBigPicture">		
-		{% include '_aside' %}	
-	</article>
-</section>

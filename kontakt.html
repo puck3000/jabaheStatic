@@ -1,13 +1,4 @@
-{#
- # Layout template
- # ---------------
- #
- # This template defines your site’s global layout. It can be
- # “extended” by other templates to fill in the gaps.
- #
- # See Twig’s Template Inheritance documentation for more details:
- # http://twig.sensiolabs.org/doc/templates.html#template-inheritance
- #}
+
 <!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
@@ -18,7 +9,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>{{ title }}</title>
+        <title>kontakt</title>
         <link rel="home" href="" />
 
         <meta name="description" content="">
@@ -32,13 +23,43 @@
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
     </head>
-    <body class="{{ bgClass }}">
+    <body class="kontakt">
         <!--[if lt IE 7]>
             <p class="browsehappy">Ihr Browser ist <strong>uralt</strong>. Bitte <a href="http://browsehappy.com/">holen Sie sich ein kostenloses Update</a> um das Internet in all seinen prächtigen Farben erleben zu können.</p>
         <![endif]-->
      
-        {% block content %}
-        {% endblock %}
+        <header>
+	<div id="head">
+		<div id="logo">
+			<img src="assets/img/Logo_JABAHE_HD_test.png" alt="Logo">
+		</div>
+		<div id="buttCont">
+		<button id="navToggle" type="button" class="tcon tcon-menu--xbutterfly" aria-label="toggle menu">
+		  <span class="tcon-menu__lines" aria-hidden="true"></span>
+		  <span class="tcon-visuallyhidden">toggle menu</span>
+		</button>
+		</div>
+	</div>
+	<nav class="kontakt">
+	<ul>
+		<li><a href="index.html">Home</a></li>
+		<li><a href="aktuelles.html">Aktuelles</a></li>
+		<li><a href="about.html">Über uns</a></li>
+		<li><a href="institutionen.html">Institutionen</a></li>
+		<li><a href="kontakt.html">Kontakt</a></li>
+	</ul>
+</nav></header><main>
+<section id="picText">
+	<article>
+			<img src="assets/img/TestImageTrans_Jabahe-800px.png" alt="TheSmallPicture">
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero blanditiis quod architecto alias, cumque ducimus illum. Tenetur assumenda, possimus voluptatem error! Eligendi nihil, officiis necessitatibus. Quia maxime quos, quidem atque!</p>
+	</article>
+
+	
+</section><footer>
+	<p class="copyright">@ Jabahe 2015</p>
+	<a class="qualität" href="index.html">messbare Qualität</a>
+</footer></main>
 
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="assets/scripts/vendor/jquery.js"><\/script>')</script>
